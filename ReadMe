@@ -1,0 +1,79 @@
+````markdown
+# Hospital Hill
+
+A comprehensive hospital management system built with Node.js, Express, and MongoDB using Mongoose. This application manages various hospital entities such as admins, doctors, nurses, patients, and users, along with URL shortening services for hospital-related links.
+
+## Description
+
+Hospital Hill provides a backend API for managing hospital operations, including user authentication, role-based access, patient records, and URL shortening for quick access to resources. It includes models for different entities, services for business logic, controllers for handling requests, routes for API endpoints, and middlewares for authentication and error handling.
+
+## Features
+
+- **User Management**: Handle admins, doctors, nurses, patients, and general users with role-based access.
+- **Patient Records**: Store and manage patient information, including assignments to doctors and wards.
+- **URL Shortening**: Create short URLs, track visits, and provide analytics for hospital links.
+- **Authentication**: Middleware for securing routes.
+- **Error Handling**: Centralized error management.
+
+## Installation
+
+1. Ensure you have Node.js and MongoDB installed on your system.
+2. Clone the repository to your local machine.
+3. Navigate to the project directory: `cd c:\Users\Hp\Desktop\Hopital-hill`
+4. Install dependencies: `npm install`
+5. Configure your environment variables (e.g., MongoDB connection string).
+6. Start the server: `npm start`
+
+## Usage
+
+- Use the API endpoints defined in the `routes/v1/` folder to interact with the system.
+- Import models from `models/` for database interactions.
+- Leverage services in `services/` for core logic.
+- Controllers in `controllers/` handle request processing.
+
+## Project Structure
+
+- **models/**: Mongoose schemas and models.
+  - `admin.js`: Admin model.
+  - `doctor.js`: Doctor model.
+  - `nurse.js`: Nurse model.
+  - `patient.js`: Patient model.
+  - `url.js`: URL model for shortening.
+  - `user.js`: User model.
+- **services/**: Business logic services.
+  - `admin.services.js`: Admin-related services.
+  - `doctor.services.js`: Doctor-related services.
+  - `nurse.service.js`: Nurse-related services.
+  - `patient.services.js`: Patient-related services.
+  - `url.services.js`: URL shortening services.
+  - `user.services.js`: User-related services.
+- **controllers/**: Request handlers.
+  - `admin.controller.js`: Admin controllers.
+  - `doctor.controller.js`: Doctor controllers.
+  - `nurse.controller.js`: Nurse controllers.
+  - `patient.controller.js`: Patient controllers.
+  - `url.controller.js`: URL controllers.
+  - `user.controller.js`: User controllers.
+- **routes/v1/**: API route definitions.
+  - `admin.routes.js`: Admin routes.
+  - `doctor.routes.js`: Doctor routes.
+  - `nurse.routes.js`: Nurse routes.
+  - `patient.routes.js`: Patient routes.
+  - `url.routes.js`: URL routes.
+  - `user.routes.js`: User routes.
+- **middlewares/**: Custom middlewares.
+  - `auth.js`: Authentication middleware.
+  - `errorHandler.js`: Error handling middleware.
+
+## API Endpoints
+
+Refer to the individual route files in `routes/v1/` for detailed endpoint listings.
+
+## Contributing
+
+Contributions are welcome. Please submit issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+````
